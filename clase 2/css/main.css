@@ -1,0 +1,69 @@
+div{   /* cuadro de color*/
+    width: 100 px; /*ancho*/
+    height: 100px;  /*alto */
+    color : #000000; /* Color de texto*/
+    background-color: #3eee73; /*color de fondo*/
+    padding: 20px; 
+    margin: 20px; /* si poner margin y tienes más de 1 se verán todos afectados, para
+                        afectar el de abajo debes poner margin-bottom */
+    border: 1px solid red; /*3 atributos: pixeles , tipo y color */
+    border-radius: 20px;/*para hacer un círculo*/
+}
+div.bg-rojo{
+    background-color: rgb(104, 5, 5);
+}
+
+.bg-rojo{    /*color de fondo del div clase bg-rojo*/
+    background-color: red;
+}
+
+.c-white{  /*texto del div clase c-white*/
+    color: white;
+}
+
+div.news{    /*para volver a la normalidad el div que sea clase "news"*/
+    border-radius: 0px;
+    border: none;
+}
+
+div.news > article p{ /*texto del div que sea clase news*/
+    font-family: 'Verdana',cursive;
+font-weight:  bold;
+}
+
+div.news > article:first-of-type p{  /* ">" hijo directo, sin eso afecta a todos los que estén dentro del articulo*/
+    font-family: 'Libre Barcode 128 Text', cursive;
+    font-size: xx-large;
+    font-weight:  bolder;
+}
+
+div.bg-black{
+background-color: black;
+color: white;
+min-width:100%;
+max-width:100%;
+}
+
+div.bg-black a{
+    display: block;
+    color: white;
+   
+}
+
+a{
+    color: black; /*color negro*/
+    text-decoration: none; /*quita delineado del texto*/
+}
+a:hover{
+    color:green;
+    font-size: xx-large; /*esto hará que se agrande*/
+}
+a:active{  
+    color: red; /*al tener el cursor sobre el enlace, se pondrá rojo*/
+    
+
+}
+
+.icon-link{
+    max-height: 100px;
+}
